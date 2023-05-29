@@ -1,5 +1,6 @@
 import React from "react";
 import "./pagina-main.css";
+
 import { Header } from "./components/header";
 import { Filters } from "./components/filters";
 import { Content } from "./components/content";
@@ -12,8 +13,6 @@ export const PaginaMain=()=>{
             <Filters/>
             <Content/>
             <Footer/>
-
-
         </div>
     )
 }
