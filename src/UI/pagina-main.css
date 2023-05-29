@@ -42,6 +42,8 @@
 .filters {
     grid-area: filters;
     background-color: black;
+    padding-top: 50%;
+  
 }
 
 .content {

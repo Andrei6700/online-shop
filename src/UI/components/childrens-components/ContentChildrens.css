@@ -48,14 +48,16 @@
     justify-items: center;
     padding-top: 30%;
     padding-bottom: 25%;
+   
 }
 
 .layout-filtre {
+    position: fixed;
     width: 100%;
     display: FLEX;
     flex-direction: column;
-    gap: 8px;
+    gap: 1em;
     color: white;
     align-items: flex-start;
-    justify-items: center;
+    
 }
