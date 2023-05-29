@@ -22,67 +22,73 @@ export const ContentChildrens = () => {
     <div className="layout-content">
 
       <div className="image-item">
-        <img src={M103} alt="M103" />
+        <img src={M103} alt="M103"  style={{ objectFit: "cover" }}/>
       </div>
 
       <div className="image-item">
-        <img src={Ozelot} alt="Ozelot" />
+        <img src={Ozelot} alt="Ozelot"  style={{ objectFit: "cover" }}/>
       </div>
 
       <div className="image-item">
-        <img src={PUMA} alt="PUMA" />
+        <img src={PUMA} alt="PUMA" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={SOMUA_SM} alt="SOMUA_SM" />
+        <img src={SOMUA_SM} alt="SOMUA_SM"  style={{ objectFit: "cover" }}/>
       </div>
 
       <div className="image-item">
-        <img src={ADATS} alt="ADATS" />
+        <img src={ADATS} alt="ADATS" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={CCVL} alt="CCVL" />
+        <img src={CCVL} alt="CCVL" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={HSTV_L} alt="HSTV_L" />
+        <img src={HSTV_L} alt="HSTV_L"  style={{ objectFit: "cover" }}/>
       </div>
 
       <div className="image-item">
-        <img src={IT_1} alt="IT_1" />
+        <img src={IT_1} alt="IT_1"  style={{ objectFit: "cover" }}/>
       </div>
 
       <div className="image-item">
-        <img src={Leopard_2A6} alt="Leopard_2A6" />
+        <img src={Leopard_2A6} alt="Leopard_2A6"  style={{ objectFit: "cover" }}/>
       </div>
 
       <div className="image-item">
-        <img src={M1_Abrams} alt="M1_Abra" />
+        <img src={M1_Abrams} alt="M1_Abra" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={TAM_2C} alt="TAM_2C" />
+        <img src={TAM_2C} alt="TAM_2C" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={Tiger_2} alt="Tiger_2" />
+        <img src={Tiger_2} alt="Tiger_2" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={WIESEL_1A} alt="WIESEL_1A" />
+        <img src={WIESEL_1A} alt="WIESEL_1A" style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={XM975} alt="XM975" />
+        <img src={XM975} alt="XM975"  style={{ objectFit: "cover" }} />
       </div>
 
       <div className="image-item">
-        <img src={Tiger_E} alt="Tiger_E" />
+        <img src={Tiger_E} alt="Tiger_E" style={{ objectFit: "cover" }}/>
+        <div className="item-info">
+          <p>Tiger E</p>
+          <p>Tanc Tiger E, German, 100mm</p>
+          <p>15.000.300$</p>
+          <button>Buy</button>
+          </div>
       </div>
 
       <div className="image-item">
-        <img src={T_80U} alt="T_80U" />
+        <img src={T_80U} alt="T_80U" style={{ objectFit: "cover" }} />
       </div>
     </div>
 
