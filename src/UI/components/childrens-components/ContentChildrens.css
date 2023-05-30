@@ -71,4 +71,5 @@
 
     text-align: center;
     text-transform: uppercase;
+    display: flow-root;
 }

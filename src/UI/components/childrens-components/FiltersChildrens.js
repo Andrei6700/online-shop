@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export const FiltersChildrens = () => {
-  const [checkedItems, setCheckedItems] = useState({}); // Starea pentru a urmări checkbox-urile selectate
+  const [checkedItems, setCheckedItems] = useState({}); 
 
   const handleCheckboxChange = (event) => {
     setCheckedItems({
@@ -11,7 +11,6 @@ export const FiltersChildrens = () => {
   };
 
   const handleSubmit = () => {
-    // Procesează opțiunile selectate
     console.log(checkedItems);
   };
 
@@ -65,8 +64,11 @@ export const FiltersChildrens = () => {
         <label htmlFor="ROMANIA">ROMANIA</label>
       </div>
      
-      <p>Tip Tanck</p>
+     
+      
       <div>
+      <p>Categorie:</p>
+        <hr className="hr-tara"/>
         <input
           type="checkbox"
           name="Light Tanck"
