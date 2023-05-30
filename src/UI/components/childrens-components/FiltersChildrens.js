@@ -19,6 +19,7 @@ export const FiltersChildrens = () => {
     <div className="layout-filtre">
       <div>
         <p>Tara de origine</p>
+        <hr className="hr-tara"/>
         <input
           type="checkbox"
           name="SUA"
