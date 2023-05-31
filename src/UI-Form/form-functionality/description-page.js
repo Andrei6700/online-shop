@@ -1,6 +1,6 @@
 import React from "react"
 
-export const DescriptionPage=()=>{
+export const DescriptionPage = () => {
     return (
         <div className="description-page">
             1

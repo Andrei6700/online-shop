@@ -1,5 +1,6 @@
 import React from "react";
 import "./TankPage.css"
+import { Page } from "../importtoApp/page";
 
 function TankPage() {
     return (

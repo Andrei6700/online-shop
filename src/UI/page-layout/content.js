@@ -1,5 +1,5 @@
 import React from "react"
-import {ContentChildrens} from "./childrens-components/ContentChildrens"
+import {ContentChildrens} from "../page-setup/ContentChildrens"
 
 export const Content=()=>{
     return (

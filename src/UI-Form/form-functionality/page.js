@@ -1,7 +1,7 @@
 import React from "react";
-import {HeaderPage} from "./header-page";
-import {DescriptionPage} from "./description-page";
-import {FooterPage} from "./footer-page";
+import { HeaderPage } from "../form-functionality/header-page";
+import { DescriptionPage } from "../form-functionality/description-page";
+import { FooterPage } from "../form-functionality/footer-page";
 import "./page.css";
 import FormOrder from "./form-order";
 
@@ -10,7 +10,7 @@ export const Page = () => {
     <div className="layout-page">
       <HeaderPage />
       <DescriptionPage />
-      <FormOrder/>
+      <FormOrder />
       <FooterPage />
     </div>
   );

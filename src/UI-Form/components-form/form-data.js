@@ -8,13 +8,13 @@ export const useFormData = () => {
             .max(64, 'Maxim 64 characters').required('Invalid form'),
         email: yup.string()
             .email('Invalid email').required('Invalid form'),
-        tara: yup.string().matches(/^[^\d]+$/, 'Invalid name')
+        tara: yup.string().matches(/^[^\d]+$/, 'Invalid country')
             .max(64, 'Maxim 64 characters').required('Invalid form'),
-        telefon: yup.string().matches(/^\d+$/, 'Invalid Telefon')
+        telefon: yup.string().matches(/^\d+$/, 'Invalid phone number')
             .max(64, 'Maxim 20 characters').required('Invalid form'),
-        bmilitara: yup.string().matches(/^[a-zA-Z0-9\s\.,'"\-]+$/, 'Invalid ')
+        bmilitara: yup.string().matches(/^[a-zA-Z0-9\s\.,'"\-]+$/, 'Invalid Military base')
             .max(64, 'Maxim 64 characters').required('Invalid form'),
-        adresa: yup.string().matches(/^[a-zA-Z0-9\s\.,'"\-]+$/, 'Invalid ')
+        adresa: yup.string().matches(/^[a-zA-Z0-9\s\.,'"\-]+$/, 'Invalid address')
             .max(64, 'Maxim 64 characters').required('Invalid form'),
     });
 

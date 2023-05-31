@@ -1,5 +1,5 @@
 import React from "react"
-import { FiltersChildrens } from "./childrens-components/FiltersChildrens"
+import { FiltersChildrens } from "../page-setup/FiltersChildrens"
 
 export const Filters=()=>{
     return (

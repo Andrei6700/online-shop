@@ -1,11 +1,11 @@
 import React from "react";
 import "./TankPage.css"
-import { Page } from "./UI-secondpage/sp-components/page";
+import { Page } from "./form-functionality/page";
 
 function TankPage() {
     return (
         <div className="body-page">
-            <Page/>
+            <Page />
         </div>
     )
 }

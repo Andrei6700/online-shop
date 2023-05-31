@@ -1,12 +1,12 @@
 import React from "react"
 import { Form } from "./data-form/form/Form"
 
-function FormOrder(){
+function FormOrder() {
     return (
         <div className="form-order-page">
             <div className="title"> Cumparare </div>
-             <div style={{ display: 'flex', flexDirection: "column", paddingTop: '50%' }} >
-                <Form/>
+            <div style={{ display: 'flex', flexDirection: "column", paddingTop: '50%' }} >
+                <Form />
             </div>
         </div>
     )
