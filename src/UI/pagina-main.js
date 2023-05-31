@@ -6,13 +6,14 @@ import { Filters } from "./components/filters";
 import { Content } from "./components/content";
 import { Footer } from "./components/footer";
 
-export const PaginaMain=()=>{
-    return  (
+
+export const PaginaMain = () => {
+    return (
         <div className="layout">
-            <Header/>
-            <Filters/>
-            <Content/>
-            <Footer/>
+            <Header />
+            <Filters />
+            <Content />
+            <Footer />
         </div>
     )
 }

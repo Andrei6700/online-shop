@@ -1,0 +1,50 @@
+.name,
+.message,
+.email,
+.tara,
+.adresa,
+.telefon,
+.bmilitara {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 5% 0;
+    padding: 3px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 18px;
+    box-shadow: inset 2px 2px 5px #cdd1cf, inset -2px -2px 5px #d8d3d3;
+}
+
+.message {
+    height: 50px;
+}
+
+.submit,
+.check {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 3em;
+    border-radius: 35% 0%;
+}
+
+form {
+    width: 200px;
+}
+
+.errors {
+    color: red;
+    background-color: rgb(238, 199, 199);
+    background-size: 10em;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-block-start: 10px;
+    font-size: medium;
+}
+

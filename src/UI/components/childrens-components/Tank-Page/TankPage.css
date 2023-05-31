@@ -1,5 +1,6 @@
-.body {
-  display: flex;
+.body-page {
+  min-height: 100vh;
+  display: grid;
   flex-direction: column;
   background-color: slategrey;
   box-sizing: /*border-box;*/ content-box;
@@ -7,3 +8,7 @@
   padding: 0;
   flex-wrap: wrap;
 }
+
+
+
+
