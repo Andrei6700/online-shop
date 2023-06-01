@@ -1,5 +1,5 @@
 import React from "react"
-import { Form } from "./data-form/form/Form"
+import {Form} from "../form/Form"
 
 function FormOrder() {
     return (

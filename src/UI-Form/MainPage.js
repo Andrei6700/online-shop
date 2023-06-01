@@ -1,8 +1,8 @@
 import React from "react";
-import "./TankPage.css"
+import "./MainPage.css"
 import { Page } from "./form-functionality/page";
 
-function TankPage() {
+function MainPage() {
     return (
         <div className="body-page">
             <Page />
@@ -10,4 +10,4 @@ function TankPage() {
     )
 }
 
-export default TankPage;
+export default MainPage;
