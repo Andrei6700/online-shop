@@ -1,5 +1,5 @@
 import "./App.css"
-import { PaginaMain } from "./UI/pagina-main";
+import { PaginaMain } from "./UI/importToPage/pagina-main";
 
 function App() {
     return (

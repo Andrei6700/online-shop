@@ -9,7 +9,7 @@ import { FormOrder } from "../page-components/form-order";
 export const Page = () => {
     return (
         <div className="layout-page">
-             <HeaderPage />
+            <HeaderPage />
             <DescriptionPage />
             <FormOrder /> 
             <FooterPage /> 
