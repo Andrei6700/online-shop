@@ -1,5 +1,5 @@
 import React from "react";
-import "./SecondPage.css"
+import "./FormLayout.css"
 import { FormLayout } from "./form-functionality/form-layout-components";
 
 function SecondPage() {

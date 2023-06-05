@@ -7,7 +7,7 @@ export const ContentChildrens = () => {
   return (
     <div className="layout-content">
       {tankData.map((tank) => (
-        <Link to="/second" className="image-item" key={tank.name}>
+        <Link to={`/second/${tank.name}`} className="image-item" key={tank.name}>
           <img src={tank.image} alt={tank.name} style={{ objectFit: "cover" }} />
           <div className="item-info">
             <p>{tank.name}</p>
