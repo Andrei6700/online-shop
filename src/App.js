@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SecondPage from "./UI-Form/SecondPage";
 import { PaginaMain } from "./UI/importToPage/pagina-main";
-import PaginaProdus from "./UI/PageGenerator";
 import "./App.css"
 
 const App = () => {
@@ -9,8 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PaginaMain />} />
-        <Route path="/second" element={<SecondPage />} />
-        <Route path="/second/:id" element={<PaginaProdus />} />
+        <Route path="/second/:id" element={<SecondPage />} />
       </Routes>
     </BrowserRouter>
   );
