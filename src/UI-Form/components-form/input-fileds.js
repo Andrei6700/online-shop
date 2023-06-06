@@ -10,6 +10,7 @@ export function InputField({ register, errors }) {
       <InputBox register={register} errors={errors} id={'adresa'} />
       <InputBox register={register} errors={errors} id={'telefon'} />
       <InputBox register={register} errors={errors} id={'bmilitara'} />
+      <InputBox register={register} errors={errors} id={'cantitate'} />
     </div>
   )
 }

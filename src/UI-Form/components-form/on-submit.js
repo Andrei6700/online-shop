@@ -20,7 +20,9 @@ export const OnChange = (e) => {
         tara: e.target.tara.value,
         adresa: e.target.adresa.value,
         telefon: e.target.telefon.value,
-        bmilitara: e.target.bmilitara.value
+        bmilitara: e.target.bmilitara.value,
+        cantitate: e.target.cantitate.value,
+        AddressID: null,
         }
         console.log(formData);
         OnSubmit(formData);

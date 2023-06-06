@@ -4,7 +4,8 @@
 .tara,
 .adresa,
 .telefon,
-.bmilitara {
+.bmilitara,
+.cantitate {
     display: flex;
     justify-content: center;
     flex-direction: row;
