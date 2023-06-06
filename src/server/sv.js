@@ -10,9 +10,9 @@ const tankName = "NumeTanc"; // Înlocuiește "NumeTanc" cu valoarea dorită pen
 const tankPrice = 100; // Înlocuiește 100 cu valoarea dorită pentru prețul tancului
 
 const db = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  database: "magazin_tancuri",
+  host: "",
+  user: "",
+  database: "",
 });
 
 const transport = {
