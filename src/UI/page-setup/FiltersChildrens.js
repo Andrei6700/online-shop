@@ -120,7 +120,7 @@ export const FiltersChildrens = () => {
 
 
 
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit}>Filtreaza</button>
     </div>
   );
 };

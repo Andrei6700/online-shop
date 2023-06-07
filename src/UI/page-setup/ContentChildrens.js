@@ -10,10 +10,23 @@ export const ContentChildrens = () => {
         <Link to={`/second/${tank.name}`} className="image-item" key={tank.name}>
           <img src={tank.image} alt={tank.name} style={{ objectFit: "cover" }} />
           <div className="item-info">
-            <p>{tank.name}</p>
-            <p>{tank.text}</p>
-            <p>{tank.price}</p>
-            <button>Buy</button>
+
+            <div>
+              <p className="produs">{tank.name}</p>
+            </div>
+
+            <div>
+              <p className="text">{tank.text}</p>
+            </div>
+
+            <div>
+              <p className="price">{tank.price}</p>
+            </div>
+
+            <div>
+              <button className="button">Buy</button>
+            </div>
+            
           </div>
         </Link>
       ))}

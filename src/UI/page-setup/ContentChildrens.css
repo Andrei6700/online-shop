@@ -1,77 +1,159 @@
 .image-item {
-    width: 50%;
-    min-height: 400px;
-    border: 2px solid black;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    --tw-border-opacity: 1;
-    border-color: rgb(199 199 199/var(--tw-border-opacity));
-    border-radius: 0.5rem;
-    border-width: 1px;
-    height: 100%;
-    min-height: 333px;
-    padding: 11px 15px 15px;
-    align-content: center;
-    flex-wrap: wrap;
-    background-color: antiquewhite;
-    text-decoration: none;
-    color: black;
+  width: 50%;
+  min-height: 400px;
+  border: 2px solid black;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  --tw-border-opacity: 1;
+  border-color: rgb(199 199 199/var(--tw-border-opacity));
+  border-radius: 0.5rem;
+  border-width: 1px;
+  height: 100%;
+  min-height: 333px;
+  padding: 11px 15px 15px;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+  text-decoration: none;
+  color: black;
 
 }
 
 .image-item img {
-    position: relative;
-    border-radius: 2%;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5rem;
+  position: relative;
+  border-radius: 2%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
 
 .item-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .layout-content {
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    padding-top: 15%;
-    padding-bottom: 25%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  padding-top: 15%;
+  padding-bottom: 25%;
 
 }
 
 .layout-filtre {
-    position: fixed;
-    width: 100%;
-    display: FLEX;
-    flex-direction: column;
-    gap: 0.5em;
-    color: white;
-    align-items: flex-start;
-    padding-top: 8%;
+  position: fixed;
+  width: 100%;
+  display: FLEX;
+  flex-direction: column;
+  gap: 0.5em;
+  color: white;
+  align-items: flex-start;
+  padding-top: 8%;
 
 }
 
 .title {
-    font-weight: 400;
-    color: #f9f5f5;
-    padding-top: 5%;
-    font-size: 70px;
-    font-family: 'Franziska, Georgia, Cambria';
+  font-weight: 400;
+  color: #f9f5f5;
+  padding-top: 5%;
+  font-size: 70px;
+  font-family: 'Franziska, Georgia, Cambria';
 
-    text-align: center;
-    text-transform: uppercase;
-    display: flow-root;
+  text-align: center;
+  text-transform: uppercase;
+  display: flow-root;
 }
+
+.text {
+  font-size: 0.875rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  font-weight: inherit;
+  line-height: 20px;
+  margin: 0;
+  min-height: 57px;
+  margin-block: 5%;
+}
+
+.produs {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.price {
+  line-height: 1;
+  font-family: IBM Plex Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  margin-block-start: 30%;
+  margin-block-end: 20%;
+  
+}
+
+.button {
+  background-color: #e87547;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+} 

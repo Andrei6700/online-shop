@@ -5,9 +5,10 @@ const mysql = require("mysql");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const creds = require("./config");
-const tankDescription = "DescriereTanc"; // Înlocuiește "DescriereTanc" cu valoarea dorită pentru descrierea tancului
-const tankName = "NumeTanc"; // Înlocuiește "NumeTanc" cu valoarea dorită pentru numele tancului
-const tankPrice = 100; // Înlocuiește 100 cu valoarea dorită pentru prețul tancului
+
+const tankDescription = "DescriereTanc"; 
+const tankName = "NumeTanc"; 
+const tankPrice = 100; 
 
 const db = mysql.createPool({
   host: "",
