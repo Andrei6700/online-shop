@@ -116,11 +116,11 @@ export const FiltersChildrens = () => {
           onChange={handleCheckboxChange}
         />
         <label htmlFor="tank destroyers">tank destroyers</label>
-      </div>
+      </div >
 
 
 
-      <button onClick={handleSubmit}>Filtreaza</button>
+      <button className="btn-filtre" onClick={handleSubmit}>Filtreaza</button>
     </div>
   );
 };
