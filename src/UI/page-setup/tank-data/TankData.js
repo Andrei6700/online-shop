@@ -20,7 +20,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/ADATS.jpg"),
     name: "M103",
-    text_descriere: "Tun principal de 120 mm, Proiectile de mare precizie, Blindajul rezistent, Motor puternic.",
+    text_description: "Tun principal de 120 mm, Proiectile de mare precizie, Blindajul rezistent, Motor puternic.",
     cannon_description:"Tun principal de 120 mm cu capacitate de tragere la distanțe mari și proiectile de mare precizie. Dispune și de două mitraliere de calibru 7,62 mm.",
     armor_description:"Blindaj greu de aproximativ 180 mm în partea frontală a corpului și de aproximativ 130 mm în partea laterală.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -30,7 +30,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/Ozelot.jpeg"),
     name: "Ozelot",
-    text_descriere: "Tun principal de 120 mm, Blindaj compozit avansat cu sisteme de protecție activă, Motor puternic și suspensie reglabilă ",
+    text_description: "Tun principal de 120 mm, Blindaj compozit avansat cu sisteme de protecție activă, Motor puternic și suspensie reglabilă ",
     cannon_description:"Tun principal de 120 mm cu capacitate de tragere precisă și rachete antitanc. Dispune și de o mitralieră coaxială de calibru 7,62 mm.",
     armor_description:"Blindaj compozit și reactiv, care oferă o protecție sporită împotriva proiectilelor inamice. Dispune și de sisteme de protecție activă.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -40,7 +40,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/PUMA.jpg"),
     name: "PUMA",
-    text_descriere: "Tun principal de 30 mm și rachete antitanc, Blindaj modular și compozit, Motor puternic și suspensie independentă",
+    text_description: "Tun principal de 30 mm și rachete antitanc, Blindaj modular și compozit, Motor puternic și suspensie independentă",
     cannon_description:"Tun principal de 30 mm și rachete antitanc, împreună cu o mitralieră de calibru 5,56 mm și lansatoare de grenade fumigene.",
     armor_description:"Blindaj modular și compozit, care asigură o protecție eficientă împotriva proiectilelor și a dispozitivelor explozive.",
     capacity_description:"3 membri (comandant, trăgător, șofer).",
@@ -50,7 +50,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/SOMUA_SM.jpg"),
     name: "SOMUA SM",
-    text_descriere: "Tun principal de 105 mm,  Blindaj compozit și reactiv, Motor puternic și suspensie eficientă",
+    text_description: "Tun principal de 105 mm,  Blindaj compozit și reactiv, Motor puternic și suspensie eficientă",
     cannon_description:"Tun principal de 105 mm cu capacitate de tragere rapidă și precisă. Dispune și de o mitralieră coaxială de calibru 7,62 mm și o mitralieră antiaeriană de calibru 12,7 mm.",
     armor_description:"Blindaj compozit și reactiv, care asigură o protecție ridicată împotriva proiectilelor inamice.",
     capacity_description:"Capacitate echipaj: 4 membri (comandant, încărcător, trăgător, șofer).",
@@ -60,7 +60,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/ADATS.jpg"),
     name: "ADATS",
-    text_descriere: " Sistem de rachete și tun antiaerian, Blindaj compozit și sisteme de protecție activă,  Motor puternic",
+    text_description: " Sistem de rachete și tun antiaerian, Blindaj compozit și sisteme de protecție activă,  Motor puternic",
     cannon_description:"Tunuri antiaeriene cu rază lungă de acțiune și capacitate de tragere la distanțe mari. Dispune și de rachete antiaeriene.",
     armor_description:"Blindaj compozit și sisteme avansate de protecție activă împotriva amenințărilor aeriene și terestre.",
     capacity_description:"3 membri (comandant, operator radar, șofer).",
@@ -70,7 +70,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/CCVL.jpg"),
     name: "CCVL",
-    text_descriere: "Tun principal de 105 mm și sistem de lansare de rachete antitanc, Blindaj modular și compozit, Motor puternic și suspensie independentă, 3 membri ",
+    text_description: "Tun principal de 105 mm și sistem de lansare de rachete antitanc, Blindaj modular și compozit, Motor puternic și suspensie independentă, 3 membri ",
     cannon_description:"Tun principal de 105 mm și capacitate de tragere rapidă și precisă. Dispune și de o mitralieră coaxială de calibru 7,62 mm.",
     armor_description:"Blindaj compozit și reactiv, care asigură o protecție eficientă împotriva proiectilelor inamice.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -80,7 +80,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/HSTV_L.jpg"),
     name: "HSTV L",
-    text_descriere: "Tun principal de 105 mm, Blindaj compozit și sisteme de protecție activă, Motor puternic și suspensie ajustabilă, 4 membri",
+    text_description: "Tun principal de 105 mm, Blindaj compozit și sisteme de protecție activă, Motor puternic și suspensie ajustabilă, 4 membri",
     cannon_description:"Tun principal de calibru variabil, capabil să utilizeze atât proiectile explozive, cât și proiectile cu focos. Dispune și de mitraliere suplimentare.",
     armor_description:"Blindaj compozit și reactiv, oferind o protecție îmbunătățită împotriva amenințărilor.",
     capacity_description:" Este echipat cu un sistem de propulsie hibrid, combinând un motor diesel cu motoare electrice, asigurând o manevrabilitate și o eficiență sporită.",
@@ -90,7 +90,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/IT_1.jpeg"),
     name: "IT 1",
-    text_descriere: "Tun principal de 125 mm și sistem de rachete antitanc, Blindaj compozit și sisteme de protecție activă, Motor puternic, 3 membri",
+    text_description: "Tun principal de 125 mm și sistem de rachete antitanc, Blindaj compozit și sisteme de protecție activă, Motor puternic, 3 membri",
     cannon_description:"Tun principal de 100 mm cu capacitate de tragere de mare precizie și un sistem de rachete antitanc. Dispune și de mitraliere adiționale.",
     armor_description:"Blindaj compozit și reactiv, care oferă o protecție sporită împotriva proiectilelor inamice.",
     capacity_description:"3 membri (comandant, încărcător, șofer).",
@@ -100,7 +100,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/Leopard_2A6.jpg"),
     name: "Leopard 2A6",
-    text_descriere: "Tun principal de 120 mm, Blindaj compozit și sisteme avansate de protecție activă, Motor puternic și suspensie ajustabilă,",
+    text_description: "Tun principal de 120 mm, Blindaj compozit și sisteme avansate de protecție activă, Motor puternic și suspensie ajustabilă,",
     cannon_description:"Tun principal de 120 mm cu capacitate de tragere la distanțe mari și proiectile de mare precizie. Dispune și de o mitralieră coaxială de calibru 7,62 mm și lansatoare de grenade fumigene.",
     armor_description:"Blindaj compozit și reactiv, asigurând o protecție ridicată împotriva proiectilelor și a dispozitivelor explozive. Dispune și de sisteme de protecție activă.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -110,7 +110,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/M1_Abrams.jpg"),
     name: "M1 Abrams",
-    text_descriere: "Tun principal de 120 mm, Blindaj compozit și sisteme de protecție activă, Suspensie independentă",
+    text_description: "Tun principal de 120 mm, Blindaj compozit și sisteme de protecție activă, Suspensie independentă",
     cannon_description:"Tun principal de 120 mm cu capacitate de tragere precisă și rapidă. Dispune și de o mitralieră coaxială de calibru 7,62 mm și o mitralieră antiaeriană de calibru 12,7 mm.",
     armor_description:"Blindaj compozit și reactiv, care oferă o protecție ridicată împotriva proiectilelor inamice. Dispune și de sisteme de protecție activă.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -120,7 +120,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/TAM_2C.jpeg"),
     name: "TAM 2C",
-    text_descriere: "Tun principal de 105 mm, Blindaj compozit și sisteme de protecție activă, 4 membri",
+    text_description: "Tun principal de 105 mm, Blindaj compozit și sisteme de protecție activă, 4 membri",
     cannon_description:" Tun principal de 105 mm cu capacitate de tragere precisă și rapidă. Dispune și de o mitralieră coaxială de calibru 7,62 mm.",
     armor_description:" Blindaj compozit și reactiv, care asigură o protecție eficientă împotriva proiectilelor inamice.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -130,7 +130,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/Tiger_2.jpeg"),
     name: "Tiger II",
-    text_descriere: "Tun principal de 88 mm, Blindaj greu și inclinat, Motor puternic ",
+    text_description: "Tun principal de 88 mm, Blindaj greu și inclinat, Motor puternic ",
     cannon_description:"Tun principal de 88 mm cu capacitate de tragere la distanțe mari și o putere de penetrare excelentă. Dispune și de mitraliere adiționale.",
     armor_description:"Blindaj greu și inclinat, care oferă o protecție excelentă împotriva proiectilelor inamice.",
     capacity_description:"5 membri (comandant, încărcător, trăgător, operator radio, șofer).",
@@ -140,7 +140,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/WIESEL_1A.jpg"),
     name: "WIESEL 1A",
-    text_descriere: "Tun principal de 20 mm, Blindaj ușor și compact,  Motor puternic și design compact",
+    text_description: "Tun principal de 20 mm, Blindaj ușor și compact,  Motor puternic și design compact",
     cannon_description:"",
     armor_description:"Dispune de un blindaj ușor și modular, care oferă protecție împotriva gloanțelor și a fragmentelor.",
     capacity_description:"",
@@ -150,7 +150,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/XM975.png"),
     name: "XM975",
-    text_descriere: "Tun principal de 120 mm,  Blindaj compozit și sisteme de protecție activă, Motor puternic și suspensie reglabilă",
+    text_description: "Tun principal de 120 mm,  Blindaj compozit și sisteme de protecție activă, Motor puternic și suspensie reglabilă",
     cannon_description:"Tun principal de 155 mm cu capacitate de tragere la distanțe mari și o mare putere de impact. Dispune și de mitraliere adiționale.",
     armor_description:"Blindaj compozit și reactiv, oferind o protecție sporită împotriva proiectilelor inamice.",
     capacity_description:"4 membri (comandant, încărcător, trăgător, șofer).",
@@ -160,7 +160,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/Tiger_E.jpeg"),
     name: "Tiger E",
-    text_descriere: "Tun principal de 88 mm, Blindaj greu și inclinat, Motor puternic și suspensie eficientă",
+    text_description: "Tun principal de 88 mm, Blindaj greu și inclinat, Motor puternic și suspensie eficientă",
     cannon_description:"Tun principal de 88 mm cu capacitate de tragere la distanțe mari și o putere de penetrare excelentă. Dispune și de mitraliere adiționale.",
     armor_description:"Blindaj greu și inclinat, care oferă o protecție excelentă împotriva proiectilelor inamice.",
     capacity_description:"5 membri (comandant, încărcător, trăgător, operator radio, șofer).",
@@ -170,7 +170,7 @@ export const tankData = [
   {
     image: require("../../tancuri-img/T_80U.jpeg"),
     name: "T-80 U",
-    text_descriere: "Tun principal de 125 mm, Blindaj compozit și sisteme de protecție activă,  Motor puternic și suspensie eficientă",
+    text_description: "Tun principal de 125 mm, Blindaj compozit și sisteme de protecție activă,  Motor puternic și suspensie eficientă",
     cannon_description:"Tun principal de 125 mm cu capacitate de tragere la distanțe mari și un sistem avansat de control al focului. Dispune și de mitraliere adiționale.",
     armor_description:"Blindaj compozit și reactiv, oferind o protecție ridicată împotriva proiectilelor inamice. Dispune și de sisteme de protecție activă.",
     capacity_description:"3 membri (comandant, încărcător, șofer).",

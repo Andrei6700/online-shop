@@ -7,9 +7,6 @@ export const HeaderPage = () => {
 
   const produs = tankData.find((tank) => tank.name === id);
 
-  if (!produs) {
-    return <div>Produsul nu a fost găsit.</div>;
-  }
   return (
     <div className="header-page">
       <div>

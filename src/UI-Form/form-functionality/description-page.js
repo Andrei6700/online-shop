@@ -18,7 +18,7 @@ export const DescriptionPage = () => {
       </div>
 
       <div className="text-tank">
-        <p>{produs.text_descriere}</p>
+        <p>{produs.text_description}</p>
         <p>{produs.cannon_description}</p>
         <p>{produs.armor_description}</p>
         <p>{produs.capacity_description}</p>
