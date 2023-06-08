@@ -16,7 +16,7 @@ export const ContentChildrens = () => {
             </div>
 
             <div>
-              <p className="text">{tank.text_descriere}</p>
+              <p className="text">{tank.text_description}</p>
             </div>
 
             <div>
