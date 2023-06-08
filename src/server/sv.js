@@ -11,9 +11,9 @@ const tankName = "NumeTanc";
 const tankPrice = 100; 
 
 const db = mysql.createPool({
-  host: "",
-  user: "",
-  database: "",
+  host: "localhost",
+  user: "root",
+  database: "magazin_tancuri",
 });
 
 const transport = {

@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import { tankData } from "../../UI/page-setup/tank-data/TankData";
 
 export const DescriptionPage = () => {
-
-
   const { id } = useParams();
 
   const produs = tankData.find((tank) => tank.name === id);
@@ -15,12 +13,19 @@ export const DescriptionPage = () => {
 
   return (
     <div className="description-page">
-      <img src={produs.image} alt={produs.name} />
-      <h2>{produs.name}</h2>
-      <p>{produs.text}</p>
-      <p>{produs.price}</p>
+      <div>
+        <img className="image-tank " src={produs.image} alt={produs.name} />
+      </div>
+
+      <div className="text-tank">
+        <p>{produs.text_descriere}</p>
+        <p>{produs.cannon_description}</p>
+        <p>{produs.armor_description}</p>
+        <p>{produs.capacity_description}</p>
+        <p>{produs.mobility_desciption}</p>
+      </div>
     </div>
   );
-}
+};
 
 export default DescriptionPage;

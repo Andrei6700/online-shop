@@ -3,27 +3,10 @@
     width: 100%;
     display: grid;
     grid:
-    "header header header" 60px
     "filters content content" 1fr
     "footer footer footer" 60px/ 15% 1fr 0px;
 }
 
-.header {
-    grid-area: header;
-    background-color: rgb(161, 153, 153);
-    width: 100%;
-    min-height: 60px;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
-    position:fixed;
-    z-index: 1000; 
-  }
-  
 .footer {
     grid-area: footer;
     bottom: 0;
@@ -54,7 +37,7 @@ background-color: #161616;
 }
 
  .hr-title{
-   color: rgb(243, 241, 241);
+  color: rgb(243, 241, 241);
   border: 0;
   width: 50px;
   height: 50px;
@@ -62,7 +45,6 @@ background-color: #161616;
   background-repeat: round;  
   display: flex;
   align-items: center;
-  
 }  
 
 .btn-filtre {
