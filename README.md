@@ -14,7 +14,7 @@ In this link : https://military-tank-shop-oxg6qq21u-andrei6700.vercel.app/
 Whereby a small error will appear after you have clicked on the ``Sent`` but.ton
 
 # Install
-Clone the project, enter the project's folder, do: npm install then npm start and it's up.
+Clone the project, enter the project's folder, do: ``npm install`` then ``npm start`` and it's up.
 
 # Startup
 
@@ -42,7 +42,7 @@ After modifying config.js, you need to open 2 terminals:
 * [Yup](https://github.com/jquense/yup) - Form validation.
 * [Axios](https://github.com/axios/axios) - Back-end framework
 
- Features
+# Features
 * Usage of React Hooks
 * Form Validation using **YUP**
 * send a message with the entered data
