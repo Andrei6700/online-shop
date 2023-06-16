@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Military Tank Shop
+This project represents a store of military tanks from several countries, such as the USA and Germany. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I chose to make it about tanks because I have always been passionate about everything military vehicles from planes to submarines, tanks, etc and plus I am a big fan of [WarThunder](https://warthunder.com/en/)
 
-## Available Scripts
+I made this site to be able to present it to my college class "Database Management Systems" where I chose to make it using React and JavaScript.
 
-In the project directory, you can run:
+# Demo
+In this link : https://military-tank-shop-oxg6qq21u-andrei6700.vercel.app/ 
+, we have offered the possibility to try this tank shop, with small limitations too:
+- data added by the user will not be added to the database;
+- data will not be sent by mail;
 
-### `npm start`
+Whereby a small error will appear after you have clicked on the ``Sent`` but.ton
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Install
+Clone the project, enter the project's folder, do: npm install then npm start and it's up.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Startup
 
-### `npm test`
+Before to start this repo, you need to change the config.js from server folder.:
+```javascript
+module.exports = {
+    USER: 'user',
+    PASS: 'password'
+}
+```
+After modifying config.js, you need to open 2 terminals:
+ To start the front-end, in the first terminal enter command: ``npm start``.
+ After adding the above command, you need to go to the ``server`` folder and enter ``npm run server``.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Built With
+* [React](https://reactjs.org/) - The web framework used.
+* [NodeJS](https://nodejs.org) - JavaScript runtime built on Chrome's V8 engine.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used for the application logic.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - The styling language used for the layout of the application.
+* [Cors](https://www.npmjs.com/package/cors) - Middleware for managing same-origin policy in Express.
+* [MySQL](https://www.mysql.com/) - elational database management system used for storing data.
+* [Express](http://expressjs.com/) - Node JS Framework for building RESTful APIs.
+* [Nodemailer](https://nodemailer.com/about/) - Node.js library for sending emails.
+* [Body-parser](https://www.npmjs.com/package/body-parser) - Middleware for parsing data from HTTP requests in Express.
+* [Yup](https://github.com/jquense/yup) - Form validation.
+* [Axios](https://github.com/axios/axios) - Back-end framework
 
-### `npm run build`
+ Features
+* Usage of React Hooks
+* Form Validation using **YUP**
+* send a message with the entered data
+* send the data entered in the database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
