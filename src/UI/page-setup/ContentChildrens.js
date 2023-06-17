@@ -3,13 +3,14 @@ import "./ContentChildrens.css";
 import { Link } from "react-router-dom";
 import { tankData } from "./tank-data/TankData";
 
-export const ContentChildrens = () => {
+export const ContentChildrens = ({ tank }) => {
   return (
     <div class="content">
       <div className="title">
         Magazin Online de Tancuri
         <hr className="hr-title" />
       </div>
+
       <div className="layout-content">
         {tankData.map((tank) => (
           <Link
