@@ -6,7 +6,6 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const creds = require("./config");
 
-const tankDescription = "DescriereTanc"; 
 const tankName = "NumeTanc"; 
 const tankPrice = 100; 
 
@@ -36,7 +35,7 @@ app.post("/send", (req, res) => {
   const { name, email, tara, adresa, telefon, bmilitara, cantitate } = req.body;
 
   const sqlInsertUsers = "INSERT INTO users (name, email, tara, adresa, telefon, bmilitara, cantitate) VALUES (?, ?, ?, ?, ?, ?, ?)";
-  const sqlInsertTanks = "INSERT INTO tanks (name, description, price) VALUES (?, ?, ?)";
+  const sqlInsertTanks = "INSERT INTO tanks (name, price) VALUES (?, ?)";
   const sqlInsertOrders = "INSERT INTO orders (user_id, tank_id, quantity, order_date) VALUES (?, ?, ?, CURDATE())";
   const sqlInsertCountry = "INSERT INTO countries (tara, adresa) VALUES (?, ?)";
 
@@ -82,7 +81,7 @@ app.post("/send", (req, res) => {
 
         const userID = result.insertId;
 
-        connection.query(sqlInsertTanks, [tankName, tankDescription, tankPrice], (error, result) => {
+        connection.query(sqlInsertTanks, [tankName, tankPrice], (error, result) => {
           if (error) {
             console.log(error);
             connection.rollback(() => {
