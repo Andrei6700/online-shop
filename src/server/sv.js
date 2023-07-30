@@ -6,8 +6,8 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const creds = require("./config");
 
-const tankName = "NumeTanc"; 
-const tankPrice = 100; 
+const tankName = "NumeTanc";
+const tankPrice = 100;
 
 const db = mysql.createPool({
   host: "localhost",
@@ -31,20 +31,71 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/send", (req, res) => {
-  const { name, email, tara, adresa, telefon, bmilitara, cantitate } = req.body;
-
+async function insertUser(connection, userData) {
   const sqlInsertUsers = "INSERT INTO users (name, email, tara, adresa, telefon, bmilitara, cantitate) VALUES (?, ?, ?, ?, ?, ?, ?)";
+  const result = await connection.query(sqlInsertUsers, Object.values(userData));
+  return result.insertId;
+}
+
+async function insertTank(connection, tankName, tankPrice) {
   const sqlInsertTanks = "INSERT INTO tanks (name, price) VALUES (?, ?)";
-  const sqlInsertOrders = "INSERT INTO orders (user_id, tank_id, quantity, order_date) VALUES (?, ?, ?, CURDATE())";
+  const result = await connection.query(sqlInsertTanks, [tankName, tankPrice]);
+  return result.insertId;
+}
+
+async function insertCountry(connection, countryData) {
   const sqlInsertCountry = "INSERT INTO countries (tara, adresa) VALUES (?, ?)";
+  const result = await connection.query(sqlInsertCountry, Object.values(countryData));
+  return result.insertId;
+}
 
+async function insertOrder(connection, userId, tankId, quantity) {
+  const sqlInsertOrders = "INSERT INTO orders (user_id, tank_id, quantity, order_date) VALUES (?, ?, ?, CURDATE())";
+  const result = await connection.query(sqlInsertOrders, [userId, tankId, quantity]);
+  return result.insertId;
+}
 
-  const mail = {
-    from: '"Test" <test@gmail.com>',
-    to: "wodolac508@ratedane.com",
-    subject: "Data from Form",
-    text: `
+app.post("/send", async (req, res) => {
+  try {
+    const { name, email, tara, adresa, telefon, bmilitara, cantitate } = req.body;
+
+    const connection = await new Promise((resolve, reject) => {
+      db.getConnection((err, connection) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(connection);
+        }
+      });
+    });
+
+    connection.beginTransaction();
+
+    const userData = { name, email, tara, adresa, telefon, bmilitara, cantitate };
+    const userId = await insertUser(connection, userData);
+
+    const tankId = await insertTank(connection, tankName, tankPrice);
+
+    const countryData = { tara, adresa };
+    await insertCountry(connection, countryData);
+
+    await insertOrder(connection, userId, tankId, cantitate);
+
+    await new Promise((resolve, reject) => {
+      connection.commit((err) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve();
+        }
+      });
+    });
+
+    const mail = {
+      from: '"Test" <test@gmail.com>',
+      to: "wodolac508@ratedane.com",
+      subject: "Data from Form",
+      text: `
         Name: ${name}
         Email: ${email}
         Country: ${tara}
@@ -53,91 +104,22 @@ app.post("/send", (req, res) => {
         Bmilitara: ${bmilitara}
         Quantity: ${cantitate}
     `,
-  };
+    };
 
+    await transporter.sendMail(mail);
 
-  db.getConnection((err, connection) => {
-    if (err) {
-      console.log(err);
-      res.sendStatus(500);
-      return;
-    }
+    console.log("Email Sent!");
+    res.send("Email Sent!");
 
-    connection.beginTransaction((err) => {
-      if (err) {
-        console.log(err);
-        res.sendStatus(500);
-        return;
-      }
-
-      connection.query(sqlInsertUsers, [name, email, tara, adresa, telefon, bmilitara, cantitate], (error, result) => {
-        if (error) {
-          console.log(error);
-          connection.rollback(() => {
-            res.sendStatus(500);
-          });
-          return;
-        }
-
-        const userID = result.insertId;
-
-        connection.query(sqlInsertTanks, [tankName, tankPrice], (error, result) => {
-          if (error) {
-            console.log(error);
-            connection.rollback(() => {
-              res.sendStatus(500);
-            });
-            return;
-          }
-
-          connection.query(sqlInsertCountry, [tara, adresa], (error, result) => {
-            if (error) {
-              console.log(error);
-              connection.rollback(() => {
-                res.sendStatus(500);
-              });
-              return;
-            }
-
-            const tankID = result.insertId;
-
-            connection.query(sqlInsertOrders, [userID, tankID, cantitate], (error, result) => {
-              if (error) {
-                console.log(error);
-                connection.rollback(() => {
-                  res.sendStatus(500);
-                });
-                return;
-              }
-              connection.commit((err) => {
-                if (err) {
-                  console.log(err);
-                  connection.rollback(() => {
-                    res.sendStatus(500);
-                  });
-                } else {
-                  transporter.sendMail(mail, (error, data) => {
-                    if (error) {
-                      console.error("Error occurred while sending email:", error);
-                      res.status(500).send("Error occurred while sending email");
-                    } else {
-                      console.log("Message sent: %s", data.messageId);
-                      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(data));
-                      res.send("Email Sent!");
-                    }
-                  });
-                }
-              });
-            });
-          });
-        });
-      });
-    });
-  });
+    connection.release();
+  } catch (error) {
+    console.error("Error occurred:", error);
+    res.status(500).send("An error occurred.");
+  }
 });
 
-  const port = 3000;
+const port = 3000;
 
-  app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-  });
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
